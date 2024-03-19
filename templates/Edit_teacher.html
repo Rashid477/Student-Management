@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/update/{{teacher.id}}" method="post">
+        {% csrf_token %}
+        Name: <input type="text" name="Name" value="{{teacher.Name}}"><br><br>
+        Age: <input type="number" name="Age" value="{{teacher.Age}}"><br><br>
+        Department: <input type="text" name="Department" value="{{teacher.Department}}"><br><br>
+        Experience: <input type="text" name="Experience" value="{{teacher.Experience}}"><br><br>
+        Phn no: <input type="text" name="Phoneno" value="{{teacher.Phoneno}}"><br><br>
+        Email: <input type="email" name="Email" value="{{teacher.Email}}"><br><br>
+        <button type="submit">Update</button
+    </form>
+</body>
+</html>
